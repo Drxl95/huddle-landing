@@ -7,6 +7,10 @@
   border-radius: 50px;
   background-color: v.$pc-pink;
   @include m.box-shadow;
+  &:hover,
+  &:focus {
+    background-color: v.$pc-light-pink;
+  }
 }
 
 a {

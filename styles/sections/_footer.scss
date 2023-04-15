@@ -114,6 +114,10 @@
     padding-left: 2rem;
     padding-bottom: 4rem;
     gap: 1.25rem;
+    :focus,
+    :hover {
+      color: rgb(21, 164, 212);
+    }
     i {
       font-size: 2rem;
     }
