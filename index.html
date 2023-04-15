@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@700&display=swap"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/3116d9e728.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
@@ -32,37 +32,38 @@
 <body>
   <main id="main">
     <header class="header">
-      <div class="header__container">
-        <div class="navbar">
-          <img src="./images/logo.svg" alt="logo" class="header__logo">
-          <a href="#" class="navbat__cta">Try it Free</a>
+      <navbar class="navbar">
+        <img src="./images/logo.svg" alt="logo" class="navbar__logo">
+        <a href="#" class="navbar__cta">Try It Free</a>
+      </navbar>
+      <div class="header__content">
+        <h1 class="header__title">Build The Community Your Fans Will Love</h1>
+        <p class="header__body">
+          Huddle re-imagines the way we build communities. You have a voice, but so does
+          your audience. Create connections with your users as you engage in genuine discussion.
+        </p>
+        <div class="header__btn">
+          <a href="#" class="btn">Get Started For Free</a>
         </div>
-        <div class="header__content">
-          <h1 class="header__title">Build The Community Your Fans Will Love</h1>
-          <p class="header__body">
-            Huddle re-imagines the way we build communities. You have a voice, but so does
-            your audience. Create connections with your users as you engage in genuine discussion.
-          </p>
-          <div class="header__btn">
-            <a href="#" class="btn"> Get Started For Free</a>
-          </div>
-          <img src="./images/screen-mockups.svg" alt="screen-img" class="header__img">
-          <div class="header__stats-container">
-            <div class="header__stats">
-              <img src="./images/icon-communities.svg" alt="icon-communities" class="stats-img">
-              <h1 class="stats-title">1.4k+</h1>
-              <p class="stat-text">Communities Formed</p>
+        <img src="./images/screen-mockups.svg" alt="screen-img" class="header__img">
+      </div>
 
-              <img src="./images/icon-messages.svg" alt="icon-messages" class="stats-messages">
-              <h1 class="stats-title">2.7m+</h1>
-              <p class="stat-text">Messages Sent</p>
-            </div>
-          </div>
+      <div class="header__stats-container">
+        <div class="header__stats">
+          <img src="./images/icon-communities.svg" alt="icon-communities" class="stats-img">
+          <h1 class="stats-title">1.4k+</h1>
+          <p class="stats-text">Communities Formed</p>
         </div>
+        <div class="header__stats">
+          <img src="./images/icon-messages.svg" alt="icon-messages" class="stats-img stats-img--msg-icon">
+          <h1 class="stats-title">2.7m+</h1>
+          <p class="stats-text">Messages Sent</p>
+        </div>
+      </div>
       </div>
     </header>
 
-    <section class="grow-section">
+    <!-- <section class="grow-section">
       <div class="grow__container">
         <div class="grow__content">
           <h1 class="grow__title">Grow Together</h1>
@@ -72,9 +73,9 @@
         </div>
         <img src="./images/illustration-grow-together.svg" alt="grow-img" class="grow__img">
       </div>
-    </section>
+    </section> -->
 
-    <section class="flowing-section">
+    <!-- <section class="flowing-section">
       <div class="flowing__container">
         <div class="flowing__content">
           <h1 class="flowing__title">Flowing Conversations</h1>
@@ -84,9 +85,9 @@
         </div>
         <img src="./images/illustration-grow-together.svg" alt="flowing-img" class="flowing__img">
       </div>
-    </section>
+    </section> -->
 
-    <section class="users-section">
+    <!-- <section class="users-section">
       <div class="users__container">
         <div class="users__content">
           <h1 class="users__title"> Your Users</h1>
@@ -97,28 +98,27 @@
         </div>
         <img src="./images/illustration-grow-together.svg" alt="users-img" class="users__img">
       </div>
-    </section>
+    </section> -->
 
-    <section class="cta-section">
+    <!-- <section class="cta-section">
       <h1 class="cta__title">Ready To Build Your Community?</h1>
       <a href="#" class="btn"> Get Started For Free</a>
-    </section>
-  </main>
+    </section> -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-  <footer class="footer">
+    <!-- <footer class="footer">
     <div class="footer__container">
+      <div class="newsletter">
+        <h1 class="newsletter__title">Newsletter</h1>
+        <p class="newsletter__body"> To recieve tips on how to grow your community, sign up to our weekly newsletter.
+          We’ll never
+          send you spam or pass on your email address</p>
+        <div class="newsletter__form">
+          <input type="text" class="newsletter__input">
+          <a href="#" class="newsletter__btn">Subscribe</a>
+        </div>
+      </div>
+
       <div class="footer__info">
         <img src="./images/logo.svg" alt="logo" class="footer__icon">
         <p class="footer__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit
@@ -132,25 +132,17 @@
           <img src="./images/icon-email.svg" alt="email-icon" class="footer__icon">
           <p class="footer__contact-text">example@huddle.com</p>
         </div>
-        <div class="footer__social">
-          <a href="#" class="footer__facebook"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#" class="footer__twitter"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#" class="footer__instagram"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-      </div>
-
-      <div class="newsletter">
-        <h1 class="newsletter__title">Newsletter</h1>
-        <p class="newsletter__body"> To recieve tips on how to grow your community, sign up to our weekly newsletter.
-          We’ll never
-          send you spam or pass on your email address</p>
-        <div class="newsletter__form">
-          <input type="text" class="newsletter__input">
-          <a href="#" class="newsletter__btn">Subscribe</a>
-        </div>
       </div>
     </div>
-  </footer>
+
+    <div class="footer__social">
+      <a href="#" class="footer__facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#" class="footer__twitter"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" class="footer__instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </footer> -->
+
+  </main>
 </body>
 
 </html>

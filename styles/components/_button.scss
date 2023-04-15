@@ -1,2 +1,18 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/typography" as t;
+@use "../abstracts/mixins" as m;
+
+.btn {
+  padding: 0.75rem 3rem;
+  border-radius: 50px;
+  background-color: v.$pc-pink;
+  @include m.box-shadow;
+}
+
+a {
+  text-decoration: none;
+  color: v.$nc-gray-blue;
+  font-family: t.$ff-open-sans;
+  font-weight: t.$fw-bold;
+  font-size: 12px;
+}
