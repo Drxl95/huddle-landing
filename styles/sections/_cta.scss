@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/typography" as t;
+@use "../abstracts/mixins" as m;
+
+.cta {
+  text-align: center;
+  margin: 12rem 2rem;
+  &__title {
+    font-size: 1.75rem;
+    font-family: t.$ff-poppins;
+    margin-bottom: 3rem;
+  }
+}
