@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/typography" as t;
+@use "../abstracts/mixins" as m;
+
+.flowing {
+  &__container {
+    padding: 6rem 2rem;
+    .flowing__img {
+      max-width: 100%;
+      padding: 4rem 2rem;
+    }
+    .flowing__content {
+      text-align: center;
+      .flowing__title {
+        font-family: t.$ff-poppins;
+        margin-bottom: 1rem;
+      }
+      .flowing__body {
+        font-family: t.$ff-open-sans;
+        color: v.$nc-dark-cyan;
+        font-size: 1rem;
+      }
+    }
+  }
+}
