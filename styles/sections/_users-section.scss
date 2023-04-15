@@ -2,24 +2,40 @@
 @use "../abstracts/typography" as t;
 @use "../abstracts/mixins" as m;
 
-.flowing {
+.section__background-top {
+  width: 100%;
+  transform: translateY(1.5rem);
+  &--desktop {
+    display: none;
+  }
+}
+.users {
+  background-color: v.$nc-gray-blue;
   &__container {
-    padding: 8rem 2rem;
-    .flowing__img {
+    padding: 2rem;
+    .users__img {
       max-width: 100%;
       padding: 4rem 2rem;
     }
-    .flowing__content {
+    .users__content {
       text-align: center;
-      .flowing__title {
+      .users__title {
         font-family: t.$ff-poppins;
         margin-bottom: 1rem;
       }
-      .flowing__body {
+      .users__body {
         font-family: t.$ff-open-sans;
         color: v.$nc-dark-cyan;
         font-size: 1rem;
       }
     }
+  }
+}
+
+.section__background-bottom {
+  width: 100%;
+  transform: translateY(7rem);
+  &--desktop {
+    display: none;
   }
 }

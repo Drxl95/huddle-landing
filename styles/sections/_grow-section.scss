@@ -2,9 +2,12 @@
 @use "../abstracts/typography" as t;
 @use "../abstracts/mixins" as m;
 
-.grow__background {
+.section__background-top {
   width: 100%;
   transform: translateY(1.5rem);
+  &--desktop {
+    display: none;
+  }
 }
 .grow {
   background-color: v.$nc-gray-blue;
@@ -26,5 +29,13 @@
         font-size: 1rem;
       }
     }
+  }
+}
+
+.section__background-bottom {
+  width: 100%;
+  transform: translateY(3.8rem);
+  &--desktop {
+    display: none;
   }
 }
