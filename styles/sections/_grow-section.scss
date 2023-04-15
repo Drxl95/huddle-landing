@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/typography" as t;
+@use "../abstracts/mixins" as m;
+
+.grow__background {
+  width: 100%;
+  transform: translateY(1.5rem);
+}
+.grow {
+  background-color: v.$nc-gray-blue;
+  &__container {
+    padding: 2rem;
+    .grow__img {
+      max-width: 100%;
+      padding: 4rem 2rem;
+    }
+    .grow__content {
+      text-align: center;
+      .grow__title {
+        font-family: t.$ff-poppins;
+        margin-bottom: 1rem;
+      }
+      .grow__body {
+        font-family: t.$ff-open-sans;
+        color: v.$nc-dark-cyan;
+        font-size: 1rem;
+      }
+    }
+  }
+}
