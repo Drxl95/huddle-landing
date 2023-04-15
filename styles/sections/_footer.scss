@@ -1,3 +1,121 @@
 @use "../abstracts/variables" as v;
 @use "../abstracts/typography" as t;
 @use "../abstracts/mixins" as m;
+
+.section__background-top {
+  width: 100%;
+  transform: translateY(0.5rem);
+  &--desktop {
+    display: none;
+  }
+}
+.footer {
+  background-color: v.$nc-dark-cyan;
+  color: #fff;
+  font-family: t.$ff-open-sans;
+  &__container {
+    padding: 3rem 2rem;
+    .newsletter {
+      margin-bottom: 6rem;
+      &__title {
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        margin-block: 1rem;
+      }
+      &__body {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+      }
+      .footer__form {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        input[type="email"] {
+          height: 50px;
+          border-radius: 6px;
+          font-size: 1rem;
+          font-family: t.$ff-open-sans;
+          padding-left: 1rem;
+          border: 1.5px black solid;
+          background-color: #fff;
+          &:focus {
+            outline: 0;
+          }
+
+          &:valid {
+            background-color: #fff;
+          }
+          &:invalid:not(:focus):not(:placeholder-shown) {
+            border-color: red;
+          }
+          &:invalid:focus:not(:placeholder-shown) {
+            margin-bottom: 5px;
+            & ~ .requirements {
+              max-height: 100px;
+            }
+          }
+        }
+        .requirements {
+          max-height: 0;
+          transition: 0.15;
+          overflow: hidden;
+          color: v.$pc-light-red;
+          font-family: t.$ff-open-sans;
+          font-size: 14px;
+          text-align: left;
+        }
+        &--desktop {
+          display: none;
+        }
+        &-button {
+          margin-left: auto;
+          width: 50%;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+          height: 50px;
+          border-radius: 6px;
+          background-color: v.$pc-pink;
+          color: #fff;
+          font-family: t.$ff-open-sans;
+          font-weight: t.$fw-bold;
+          font-size: 1rem;
+          border: none;
+          margin-top: 1rem;
+          &:hover,
+          &:focus {
+            background-color: v.$pc-light-pink;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .footer__info {
+      .footer__logo {
+        width: 220px;
+        margin-bottom: 1rem;
+      }
+      .footer__text {
+        line-height: 1.5;
+        margin-bottom: 3rem;
+      }
+      .footer__contact {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 1rem;
+        .footer__icon {
+          width: 25px;
+        }
+      }
+    }
+  }
+  &__social {
+    display: flex;
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+    gap: 1.25rem;
+    i {
+      font-size: 2rem;
+    }
+  }
+}
