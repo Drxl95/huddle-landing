@@ -5,6 +5,8 @@
 .flowing {
   &__container {
     padding: 8rem 2rem;
+    display: flex;
+    flex-direction: column;
     .flowing__img {
       max-width: 100%;
       padding: 4rem 2rem;
@@ -19,6 +21,38 @@
         font-family: t.$ff-open-sans;
         color: v.$nc-dark-cyan;
         font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: map-get(v.$viewport_size, m)) {
+  .flowing {
+    &__container {
+      .flowing__img {
+        max-width: 70%;
+        align-self: center;
+        padding: 4rem 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: map-get(v.$viewport_size, lg)) {
+  .flowing {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10rem;
+      padding: 0rem 8rem;
+      gap: 6rem;
+      .flowing__img {
+        max-width: 50%;
+        padding: 4rem 2rem;
+      }
+      .flowing__content {
+        text-align: left;
+        align-self: center;
       }
     }
   }

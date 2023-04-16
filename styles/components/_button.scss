@@ -3,7 +3,7 @@
 @use "../abstracts/mixins" as m;
 
 .btn {
-  padding: 0.75rem 3rem;
+  padding: 1rem 4rem;
   border-radius: 50px;
   background-color: v.$pc-pink;
   @include m.box-shadow;

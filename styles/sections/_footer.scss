@@ -2,7 +2,7 @@
 @use "../abstracts/typography" as t;
 @use "../abstracts/mixins" as m;
 
-.section__background-top {
+.footer__background-top {
   width: 100%;
   transform: translateY(0.5rem);
   &--desktop {
@@ -19,11 +19,11 @@
       margin-bottom: 6rem;
       &__title {
         text-transform: uppercase;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         margin-block: 1rem;
       }
       &__body {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         line-height: 1.5;
       }
       .footer__form {
@@ -101,7 +101,7 @@
       .footer__contact {
         display: flex;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
         margin-bottom: 1rem;
         .footer__icon {
           width: 25px;
@@ -112,7 +112,7 @@
   &__social {
     display: flex;
     padding-left: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
     gap: 1.25rem;
     :focus,
     :hover {
@@ -121,5 +121,111 @@
     i {
       font-size: 2rem;
     }
+  }
+}
+@media only screen and (min-width: map-get(v.$viewport_size, m)) {
+  .footer__container {
+    .newsletter {
+      width: 70%;
+      .footer__form {
+        display: flex;
+        flex-direction: row;
+
+        &--mobile {
+          display: none;
+        }
+        &--desktop {
+          display: inline;
+        }
+        input[type="email"] {
+          width: 60%;
+        }
+
+        &-button {
+          width: 30%;
+          margin-left: 2rem;
+          margin-top: 0rem;
+          &:hover,
+          &:focus {
+            background-color: v.$pc-light-pink;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .footer__info {
+      width: 70%;
+    }
+  }
+}
+
+@media only screen and (min-width: map-get(v.$viewport_size, lg)) {
+  .footer__container {
+    padding: 3rem 8rem;
+    .newsletter {
+      width: 80%;
+    }
+    .footer__info {
+      .footer__text {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  .footer__social {
+    padding-left: 8rem;
+  }
+}
+
+@media only screen and (min-width: map-get(v.$viewport_size, xl)) {
+  .footer__container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 6rem;
+    padding-bottom: 0rem;
+
+    .newsletter {
+      width: 80%;
+      .newsletter__body {
+        width: 75%;
+      }
+    }
+    .footer__info {
+      margin-top: 0.75rem;
+      .footer__text {
+        margin-bottom: 1.5rem;
+        width: 80%;
+      }
+    }
+  }
+  .footer__social {
+    padding-left: 8rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media only screen and (min-width: map-get(v.$viewport_size, xxl)) {
+  .footer__container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 16rem;
+    padding-bottom: 0rem;
+    .newsletter {
+      width: 80%;
+      .newsletter__body {
+        width: 75%;
+        margin-bottom: 2rem;
+      }
+    }
+    .footer__info {
+      margin-top: 0.75rem;
+      .footer__text {
+        margin-bottom: 1.5rem;
+        width: 80%;
+      }
+    }
+  }
+  .footer__social {
+    padding-left: 8rem;
+    padding-bottom: 5rem;
   }
 }
