@@ -70,8 +70,8 @@
     &__container {
       display: flex;
       flex-direction: row-reverse;
-      padding: 0rem 8rem;
-      gap: 6rem;
+      padding: 0rem 7rem;
+      gap: 6.5rem;
       .users__img {
         max-width: 50%;
         padding: 4rem 2rem;
@@ -91,6 +91,18 @@
     }
     &--mobile {
       display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: map-get(v.$viewport_size, xxl)) {
+  .users {
+    &__container {
+      .users__content {
+        .users__title {
+          font-size: 2.25rem;
+        }
+      }
     }
   }
 }
