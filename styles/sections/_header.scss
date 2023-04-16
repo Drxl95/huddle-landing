@@ -122,7 +122,14 @@
       }
       .header__img {
         margin-top: 6rem;
-        margin-bottom: 3rem;
+        margin-bottom: 0rem;
+      }
+    }
+    .header__stats-container {
+      .header__stats {
+        .header-title {
+          font-size: 6rem;
+        }
       }
     }
   }
@@ -131,6 +138,9 @@
 @media only screen and (min-width: map-get(v.$viewport_size, xxl)) {
   .header {
     .header__content {
+      .header__title {
+        font-size: 3rem;
+      }
       .header__body {
         width: 35%;
         margin-inline: auto;
